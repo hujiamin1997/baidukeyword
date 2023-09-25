@@ -42,7 +42,7 @@ class Ui_MainWindow(object):
         MainWindow.setStatusBar(self.statusbar)
 
         self.retranslateUi(MainWindow)
-        self.findpushButton.clicked.connect(MainWindow.get_words)
+        self.findpushButton.clicked.connect(MainWindow.run)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
 
     def retranslateUi(self, MainWindow):
